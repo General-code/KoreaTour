@@ -1,0 +1,82 @@
+
+:root {
+    --font-color: #fcfefe;
+    --header-color: #66bfbf;
+    --pink-color: #f76b8a;
+    --basic-color: #eaf6f6;
+}
+
+
+.navbar {
+    padding: 0 5%;
+}
+
+.bg-title {
+    background-color: var(--basic-color);
+    color: black;
+}
+
+.subtitle {
+    font-family: "Montserrat",sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+/* Testimonial Section */
+
+#Testimonials {
+}
+
+.testmonial {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color:var(--font-color);
+    box-sizing:border-box;
+    text-align: center;
+
+}
+
+
+
+.carousel-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/compass.jpg);
+}
+
+.carousel-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/Place1920x1080.jpg);
+}
+
+
+/* Hot LIST Section */
+/* DESC: contains most popular tourism places*/
+#hot-list{
+    /*padding: 100px;*/
+}
+
+.hot-card {
+    width: 100%;
+}
+
+@media (max-width:1000px) and (min-width: 400px){
+    .testimonial {
+        height: 300px;
+    }
+
+}
+
+
+
+
