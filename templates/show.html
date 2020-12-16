@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% include 'preset.html' %}
+
+    <link rel="stylesheet" href="../static/show.css">
+    <title>Korean Tour</title>
+
+</head>
+<body>
+{% include 'pureNav.html' %}
+
+<section id="show">
+    <div class="container-fluid">
+        <div class="sibling">
+        <img class="title-image" src="{{img_url}}" alt="{{title}}}image">
+        </div>
+            <h2>{{title}}</h2>
+
+        <hr>
+        <p>tags</p>
+    </div>
+</section>
+
+
+
+<section id="convenience">
+    <div class="blogList">
+        <div class="blog">
+            <div class="writings"></div>
+            <div class="images"></div>
+        </div>
+    </div>
+</section>
+<maps></maps>
+
+<script>
+    $.ajax({
+        url: "show_blog" + '?title=' + document.querySelector('h2').textContent,
+        method: 'GET',
+        data: {},
+        success: function (res) {
+            console.log(res);
+        }
+    })
+</script>
+</body>
+</html>

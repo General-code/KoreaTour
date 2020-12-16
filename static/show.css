@@ -1,0 +1,34 @@
+#show {
+    height: 450px;
+    padding: 5% 15%;
+}
+
+
+.sibling {
+    display: flex;
+}
+
+.title-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 55%;
+    border-radius: 20px;
+    height: 20%;
+    margin-bottom: 15px;
+}
+
+#convenience{
+
+}
+
+.blogList {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:1000px) and (min-width: 400px){
+    .title{
+        height: 300px;
+    }
+}
+
